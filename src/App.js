@@ -10,7 +10,7 @@ import advanced from './assets/pics/catAdvanced.png';
 
 
 
-const api = "http://192.168.0.47:5000"
+const api = "http://mcw:5000"
 
 const App = () => {
 
