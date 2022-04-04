@@ -5,7 +5,7 @@
 # for the react container to consume
 
 # copy ip file to task
-cp /home/pi/magic-cat-wand-react/ip_bank/linux_get_ip.sh /usr/local/bin/linux_get_ip.sh
+cp /home/pi/magic-cat-wand-react/linux_get_ip.sh /usr/local/bin/linux_get_ip.sh
 
 sudo chmod 744 /usr/local/bin/linux_get_ip.sh
 sudo chmod 644 /etc/systemd/system/get_ip.service

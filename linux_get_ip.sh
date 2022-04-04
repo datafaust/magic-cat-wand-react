@@ -7,8 +7,8 @@ cd /home/pi/magic-cat-wand-react/
 touch /home/pi/magic-cat-wand-react/.env
 
 # assign the ip address to that env file
-MACHINE_HOST_IP="$(hostname -I | cut -d " " -f 2)"
-echo "${MACHINE_HOST_IP}"
+REACT_APP_MACHINE_HOST_IP="$(hostname -I | cut -d " " -f 2)"
+echo "${REACT_APP_MACHINE_HOST_IP}"
 echo "$(ls)"
 destdir=/home/pi/magic-cat-wand-react/.env
-echo "MACHINE_HOST_IP=$MACHINE_HOST_IP" > "$destdir"
+echo "REACT_APP_MACHINE_HOST_IP=$REACT_APP_MACHINE_HOST_IP" > "$destdir"
