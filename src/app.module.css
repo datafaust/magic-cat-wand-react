@@ -1,0 +1,143 @@
+@media only screen and (max-width: 900px) {
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+        }
+    }
+.container {
+    flex:1;
+    background-image: url("./assets/pics/art-deco-cat-bg1.jpeg");
+    position: relative;
+    height:100%;
+    width: 100%;
+    background-position: 0px 0px;
+   
+    /* background-repeat: repeat-x;
+    animation: animatedBackground 10s linear infinite; */
+}
+
+
+.brandContainer{
+    color: white;
+    font-family: 'broadway';
+    padding:5px;
+    text-shadow: 2px 2px black;
+}
+
+.brandMain {
+    display:flex;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    font-style: italic;
+    text-shadow: 2px 2px black;
+}
+
+.brandSubContainer {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: 10%;
+    text-shadow: 2px 2px black;
+}
+
+.brandSub {
+    color:white;
+    text-align: center;
+    align-items: center;
+    font-family: 'broadway';
+    font-size: 20px;
+    font-style: italic;
+    margin-top: -3%;
+}
+
+.brandImg {
+    padding: 1%;
+    margin-bottom: 8%;
+}
+
+.title {
+    color: black;
+    text-align: center;
+    font-family: 'blade';
+}
+
+
+
+.connContainer {
+    display: flex;
+    height: 25px;
+    width: 160px;
+    margin: 5%;
+    padding:2%;
+    border-radius: 2%;
+    border: 3px solid #D1AD70; 
+    background: #91D4CF;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    ;
+}
+
+
+
+
+.choiceContainer {
+    display: flex;
+    flex-wrap: wrap;
+    
+    /* justify-content: space-between; */
+    /* margin-top: -5%; */
+}
+
+.choice {
+    border-radius:10%;
+    width: 40%;
+    margin: 30px auto;
+    background: #15173D; /*  #91D4CF; */
+    border: 3px solid #D1AD70; 
+    box-shadow: 10px 4px 10px black;
+    align-items: center;
+}
+
+.choiceImg {
+    margin-left: 25%;
+    padding: 5px;
+}
+
+.choiceText {
+    text-align: center;
+    font-family: 'broadway';
+    color: white;
+    font-size: 1.2em;
+}
+
+@font-face {
+    font-family: 'blade';
+    font-weight: normal;
+    font-style: normal;
+    src: url('./assets/fonts/BLADRMF_.ttf') format('truetype'); 
+  }
+
+@font-face {
+    font-family: 'broadway';
+    font-weight: normal;
+    font-style: normal;
+    src: url('./assets/fonts/BroadwayD.ttf') format('truetype'); 
+  }
+  
+  @font-face {
+    font-family: 'hein';
+    font-weight: bold;
+    font-style: bold;
+    src: url('./assets/fonts/copyfonts.com_heinlein.ttf') format('truetype'); 
+  }
+
+  
+}
+
+
