@@ -3,6 +3,7 @@ version: '3.7'
 services:
 
   sample:
+    image: mcw-gui
     container_name: mcw-gui
     restart: always
     build: ./
