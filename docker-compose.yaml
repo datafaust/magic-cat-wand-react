@@ -10,6 +10,7 @@ services:
     volumes:
       - '.:/app'
       - '/app/node_modules'
+      - './ip_bank:/app/ip_bank'
     ports:
       - 3001:3000
     environment:

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # test existence of a directory
-cd ./magic-cat-wand-react/ip_bank/
+cd /home/pi/magic-cat-wand-react/
 
 # if a directory exists create an env file
 touch .env

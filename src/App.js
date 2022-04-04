@@ -9,8 +9,7 @@ import intermediate from './assets/pics/catIntermediate.png';
 import advanced from './assets/pics/catAdvanced.png';
 
 
-
-const api = "http://localhost:5000"
+const api = `http://${process.env.REACT_APP_MACHINE_HOST_IP}:5000`
 
 const App = () => {
 
@@ -68,6 +67,8 @@ const App = () => {
 
   /** test connection */
   validateConn();
+
+  console.log(process.env.REACT_APP_MACHINE_HOST_IP)
 
   return (
     <div 
