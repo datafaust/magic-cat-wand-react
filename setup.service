@@ -1,0 +1,10 @@
+[Unit]
+Description=setup mcw
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/setup.service
+
+[Install]
+WantedBy=multi-user.target
