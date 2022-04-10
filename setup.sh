@@ -16,5 +16,5 @@ destdir=/home/pi/magic-cat-wand-react/.env
 echo "REACT_APP_MACHINE_HOST_IP=$REACT_APP_MACHINE_HOST_IP" > "$destdir"
 
 # restart docker container------------------------------------------------
-
+sleep 1
 docker restart mcw-gui

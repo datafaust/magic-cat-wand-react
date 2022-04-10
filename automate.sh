@@ -4,8 +4,18 @@
 # once the ip is written to a .env, it is exposed as a volume 
 # for the react container to consume
 
-# copy ip file to task
-cp /home/pi/magic-cat-wand-react/linux_get_ip.sh /usr/local/bin/linux_get_ip.sh
+# copy ip file to task and authorize
+cp /home/pi/magic-cat-wand-react/setup.sh /usr/local/bin/setup.sh
+sudo chmod 744 /usr/local/bin/setup.sh
 
-sudo chmod 744 /usr/local/bin/linux_get_ip.sh
-sudo chmod 644 /etc/systemd/system/get_ip.service
+# create setup files
+sudo nano /etc/systemd/system/setup.service
+sudo nano /etc/systemd/system/setup.timer
+
+# add permissions for the service
+sudo chmod 644 /etc/systemd/system/setup.service
+
+# setup and reload systemctl
+sudo systemctl daemon-reload
+sudo systemctl enable setup.timer
+sudo systemctl start setup.timer

@@ -104,6 +104,12 @@
     align-items: center;
 }
 
+
+.choice:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 .choiceImg {
     margin-left: 25%;
     padding: 5px;
