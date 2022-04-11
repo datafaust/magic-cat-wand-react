@@ -4,7 +4,7 @@ After=multi-user.target
 
 [Service]
 Type=oneshot
-ExecStart=/usr/local/sbin/setup.service
+ExecStart=/usr/local/bin/setup.sh
 
 [Install]
 WantedBy=multi-user.target
